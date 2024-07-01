@@ -399,6 +399,8 @@
                     const appCard = document.createElement('div');
                     appCard.className = 'app-card';
                     appCard.innerHTML = `
+                    <h3>${app.name}${app.admin ? '<img src="shield-icon.png" alt="Admin" style="width: 20px; margin-left: 5px; border-radius: 15px;">' : ''}</h3>
+                        <img src="${app.app_icon}" alt="${app.name} icon">
                         <p>${app.description}</p>
                         <a href="${app.download_link}" class="download-button">Download</a>
                     `;
